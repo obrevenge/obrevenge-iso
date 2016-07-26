@@ -1,7 +1,0 @@
-#!/bin/bash
-
-# Sample Control Panel for LXDE
-
-yad --icons --read-dir="/usr/share/applications/control_panel/" --width=700 --height=580 --sort-by-name --single-click \
---window-icon=preferences-desktop --image=preferences-desktop --image-on-top --center \
---title="OBRevenge Control Panel" --text='<span font_weight="bold">Change desktop, system and device settings</span>\nSome utilities require the administrator password.' --button=gtk-close

@@ -1,8 +1,0 @@
-[Desktop Entry]
-Version=1.0
-Type=Application
-Name=Panel Switcher
-Comment=Panel Switching tool for obrevenge
-Categories=Utility;
-Exec=nohup lxterminal -e /usr/bin/panelswitcher > /dev/null &
-Icon=/usr/share/icons/Faenza/apps/scalable/display-capplet.svg
