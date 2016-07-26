@@ -1,0 +1,97 @@
+#!/bin/bash
+
+# This is a graphical script to add and remove items from autostart in OBRevenge
+# Written by ajjames31
+
+# Function to add items to autostart
+
+
+
+add_autostart() {
+
+	dialog --title "OBRevenge Autostart" --inputbox "Please enter the command that you want to use to autostart the desired application." 15 50 2>.temp/autoadd.txt
+
+  auto=` cat .temp/autoadd.txt `
+
+  dialog --title "OBRevenge Autostart" --yesno "Are you sure that you want to add $auto to the autostart file?" 15 50
+
+	choice=$?
+
+	if [ "$choice" = "0" ]
+		then echo "$auto &" >> /home/$user/.config/openbox/autostart
+		else main_menu
+	fi
+
+rm -rf .temp
+
+clear
+
+}
+
+# Function to remove items from autostart
+
+rem_autostart () {
+
+	dialog --title "OBRevenge Autostart" --inputbox "Please enter the command that you want to remove from autostart." 15 50 2>.temp/autorem.txt
+
+	remauto=` cat .temp/autorem.txt `
+
+	dialog --title "OBRevenge Autostart" --yesno "Are you sure that you want to remove $remauto from the autostart file?" 15 50
+
+	choice=$?
+
+	if [ "$choice" = "0" ]
+		then sed -i "/$remauto/d" /home/$user/.config/openbox/autostart
+		else main_menu
+	fi
+
+rm -rf .temp
+
+clear
+
+}
+
+# Main Interface
+
+main_menu () {
+
+	dialog --title "OBRevenge Autostart" --menu "Would you like to add or remove an item from autostart?" 15 60 10 \
+"Add" "add an entry to the autostart file" \
+"Remove" "remove an entry from the autostart file" \
+"Exit" "Exit the menu" 2>.temp/addrem.txt
+
+	addrem=` cat .temp/addrem.txt `
+
+	if [ "$addrem" = "Add" ]
+		then add_autostart
+		elif [ "$addrem" = "Remove" ] 
+		then rem_autostart
+		else clear
+		exit
+	fi
+
+clear
+
+}
+
+# Execution
+
+clear
+
+# Get Username
+
+mkdir .temp
+
+	dialog --title "OBRevenge Autostart" --inputbox "Please enter your username." 15 50 2>.temp/username.txt
+
+	user=` cat .temp/username.txt `
+
+
+clear
+
+while true; do
+main_menu
+done
+
+
+

@@ -1,0 +1,43 @@
+#!/bin/bash
+
+# This is a script to change the panels in obrevenge.
+# Written by ajjames31
+
+clear
+
+mkdir .temp
+
+dialog --title "ObRevenge Panel Switcher" --menu "Select Your Preferred Panel" 15 50 10 \
+"tint2" "Lightest panel, least features" \
+"lxpanel" "Light, with a menu" \
+"xfce4-panel" "Full featured with whisker menu" \
+"Cancel" "Close the panel switcher" 2>.temp/panel.txt
+
+panel=` cat .temp/panel.txt `
+clear
+
+case $panel in
+	"tint2") sed -i -e 's/xfce4-panel/tint2/g' ~/.config/openbox/autostart;sed -i -e 's/lxpanel/tint2/g' ~/.config/openbox/autostart;
+	killall xfce4-panel;killall lxpanel;nohup tint2 > /dev/null 2> /dev/null &;;
+	"lxpanel") sed -i -e 's/xfce4-panel/lxpanel/g' ~/.config/openbox/autostart;sed -i -e 's/tint2/lxpanel/g' ~/.config/openbox/autostart;
+	killall tint2;killall xfce4-panel;nohup lxpanel > /dev/null 2> /dev/null &;;
+	"xfce4-panel") sed -i -e 's/tint2/xfce4-panel/g' ~/.config/openbox/autostart;sed -i -e 's/lxpanel/xfce4-panel/g' ~/.config/openbox/autostart;
+	killall tint2;killall lxpanel;nohup xfce4-panel > /dev/null 2> /dev/null &;;
+	"Cancel") exit;;
+esac
+
+clear
+
+dialog --title "ObRevenge Panel Switcher" --msgbox "Your Preference has been recorded in the autostart file. \nThe changes will persist after logging out or rebooting." 15 50
+
+rm -rf .temp
+
+if [ "$panel" = "tint2" ]
+	then dialog --title "ObRevenge Panel Switcher" --msgbox "Tint2 requires logging out and logging back in for the change to take effect. Please press enter to logout." 15 50;oblogout
+
+fi
+
+
+disown
+
+clear 

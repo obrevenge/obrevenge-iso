@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Application
+Name=logout
+Comment=logout utility
+Categories=Utility;
+Exec=oblogout
+Icon=/usr/share/icons/Faenza/apps/scalable/gnome-session-logout.svg
