@@ -46,35 +46,15 @@ Plugin {
   }
 }
 Plugin {
-  type=launchbar
-  Config {
-    Button {
-      id=pcmanfm.desktop
-    }
-  }
-}
-Plugin {
   type=space
   Config {
     Size=4
   }
 }
 Plugin {
-  type=wincmd
-  Config {
-    Button1=iconify
-    Button2=shade
-  }
-}
-Plugin {
   type=space
   Config {
     Size=4
-  }
-}
-Plugin {
-  type=pager
-  Config {
   }
 }
 Plugin {
@@ -88,7 +68,7 @@ Plugin {
   expand=1
   Config {
     tooltips=1
-    IconsOnly=0
+    IconsOnly=1
     AcceptSkipPager=1
     ShowIconified=1
     ShowMapped=1
@@ -101,7 +81,7 @@ Plugin {
   }
 }
 Plugin {
-  type=cpu
+  type=pager
   Config {
   }
 }

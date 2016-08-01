@@ -33,6 +33,10 @@ xf86-input-mouse
 base-devel
 gnome-keyring
 
+#vbox
+virtualbox-guest-modules-arch
+virtualbox-guest-utils
+
 #utilities
 volumeicon 
 parcellite 
@@ -58,6 +62,8 @@ yad
 yaourt
 pamac-aur
 polkit-gnome
+lynx
+wget
 
 #print support
 cups
@@ -90,6 +96,12 @@ cmatrix
 synapse
 compton
 oblogout
+xfce4-dockbarx-plugin-git
+audacious
+vlc
+qt4
+libreoffice-fresh
+gimp
 
 # themes
 numix-themes

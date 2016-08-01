@@ -18,7 +18,6 @@ I added a custom Control Panel for this release. It is titled "Control Panel", a
 
 Pamac, the package manager and update manager from Manjaro, is installed to provide a gui method of installing packages or updating. This spin is designed to be lightweight, and to allow the user to install their own perferred applications. My goal was to provide a stable and user-friendly base for users to build their desired system on top of.
 
-There are no virtualbox modules included. If you want to run in virtualbox you will want to install the virtualbox modules packages.
 
 Below I have listed some aliaes that are included that you can use in the command line.
 

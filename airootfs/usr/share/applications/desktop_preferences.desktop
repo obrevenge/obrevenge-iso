@@ -1,8 +1,0 @@
-[Desktop Entry]
-Version=1.0
-Type=Application
-Name=Desktop Preferences
-Comment=Desktop Preferences for OBRevenge
-Categories=Utility;
-Exec=pcmanfm --desktop-pref
-Icon=/usr/share/icons/Faenza/categories/scalable/applications-system.svg

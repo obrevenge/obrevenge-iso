@@ -1,5 +1,5 @@
 favorites=exo-terminal-emulator.desktop,exo-file-manager.desktop,exo-mail-reader.desktop,exo-web-browser.desktop
-recent=control_panel.desktop,exo-file-manager.desktop,oblogout.desktop,panelswitcher.desktop,exo-terminal-emulator.desktop,pcmanfm.desktop,synapse.desktop,lxterminal.desktop
+recent=DockX.desktop,chrome-mojepfklcankkmikonjlnidiooanmpbb-Default.desktop,audacity.desktop,exo-terminal-emulator.desktop,control_panel.desktop,exo-file-manager.desktop,oblogout.desktop,pcmanfm.desktop
 button-title=Applications
 button-icon=/usr/share/icons/Faenza/places/scalable/archlinux-logo.svg
 button-single-row=false

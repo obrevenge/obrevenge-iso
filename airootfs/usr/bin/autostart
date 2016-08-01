@@ -18,7 +18,7 @@ add_autostart() {
 	choice=$?
 
 	if [ "$choice" = "0" ]
-		then echo "$auto &" >> /home/$user/.config/openbox/autostart
+		then echo "$auto &" >> ~/.config/openbox/autostart
 		else main_menu
 	fi
 
@@ -41,7 +41,7 @@ rem_autostart () {
 	choice=$?
 
 	if [ "$choice" = "0" ]
-		then sed -i "/$remauto/d" /home/$user/.config/openbox/autostart
+		then sed -i "/$remauto/d" ~/.config/openbox/autostart
 		else main_menu
 	fi
 
@@ -81,11 +81,6 @@ clear
 # Get Username
 
 mkdir .temp
-
-	dialog --title "OBRevenge Autostart" --inputbox "Please enter your username." 15 50 2>.temp/username.txt
-
-	user=` cat .temp/username.txt `
-
 
 clear
 
