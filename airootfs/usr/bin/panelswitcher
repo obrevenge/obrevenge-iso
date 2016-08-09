@@ -1,43 +1,85 @@
-#!/bin/bash
+#!/usr/bin/env python2
+#
+#
+# OBRevenge Panel Swither
+# By ajjames31
+#
+# This is a simple gui application to change the panel in OBRevenge
+# 
 
-# This is a script to change the panels in obrevenge.
-# Written by ajjames31
+# Importing Modules
+import pygtk
+import gtk
+import os
 
-clear
+# Creating base class (base window)
 
-mkdir .temp
+class Base:
+    def destroy(self, widget, data=None):
+        gtk.main_quit()
 
-dialog --title "ObRevenge Panel Switcher" --menu "Select Your Preferred Panel" 15 50 10 \
-"tint2" "Lightest panel, least features" \
-"lxpanel" "Light, with a menu" \
-"xfce4-panel" "Full featured with whisker menu" \
-"Cancel" "Close the panel switcher" 2>.temp/panel.txt
+    def starttint(self, widget):
+        os.system("sed -i -e 's/xfce4-panel/tint2/g' ~/.config/openbox/autostart;sed -i -e 's/lxpanel/tint2/g' ~/.config/openbox/autostart;killall xfce4-panel;killall lxpanel;nohup tint2 > /dev/null 2> /dev/null &")
 
-panel=` cat .temp/panel.txt `
-clear
+    def startlxpanel(self, widget):
+        os.system("sed -i -e 's/xfce4-panel/lxpanel/g' ~/.config/openbox/autostart;sed -i -e 's/tint2/lxpanel/g' ~/.config/openbox/autostart;killall tint2;killall xfce4-panel;nohup lxpanel > /dev/null 2> /dev/null &")
 
-case $panel in
-	"tint2") sed -i -e 's/xfce4-panel/tint2/g' ~/.config/openbox/autostart;sed -i -e 's/lxpanel/tint2/g' ~/.config/openbox/autostart;
-	killall xfce4-panel;killall lxpanel;nohup tint2 > /dev/null 2> /dev/null &;;
-	"lxpanel") sed -i -e 's/xfce4-panel/lxpanel/g' ~/.config/openbox/autostart;sed -i -e 's/tint2/lxpanel/g' ~/.config/openbox/autostart;
-	killall tint2;killall xfce4-panel;nohup lxpanel > /dev/null 2> /dev/null &;;
-	"xfce4-panel") sed -i -e 's/tint2/xfce4-panel/g' ~/.config/openbox/autostart;sed -i -e 's/lxpanel/xfce4-panel/g' ~/.config/openbox/autostart;
-	killall tint2;killall lxpanel;nohup xfce4-panel > /dev/null 2> /dev/null &;;
-	"Cancel") exit;;
-esac
+    def startxfce(self, widget):
+        os.system("sed -i -e 's/tint2/xfce4-panel/g' ~/.config/openbox/autostart;sed -i -e 's/lxpanel/xfce4-panel/g' ~/.config/openbox/autostart;killall tint2;killall lxpanel;nohup xfce4-panel > /dev/null 2> /dev/null &")
 
-clear
+    def __init__(self):
+        self.window = gtk.Window(gtk.WINDOW_TOPLEVEL)
+        self.window.set_position(gtk.WIN_POS_CENTER)
+        self.window.set_size_request(700, 200)
+        self.window.set_title("OBRevenge Panel Switcher")
 
-dialog --title "ObRevenge Panel Switcher" --msgbox "Your Preference has been recorded in the autostart file. \nThe changes will persist after logging out or rebooting." 15 50
+        # Button and Label for Tint2        
+        self.tintbutton = gtk.Button("Tint2")
+        self.tintbutton.connect("clicked", self.starttint)
+        self.tintbutton.set_tooltip_text("Start Tint2")
+        self.tintlabel = gtk.Label("Tint2 Panel is a simple panel that shows the system tray and open windows. It is the lightest and less resource intensive option.")
+        self.tintlabel.set_line_wrap(True)
 
-rm -rf .temp
+        # Button and Label for LXPanel
+        self.lxbutton = gtk.Button("LXPanel")
+        self.lxbutton.connect("clicked", self.startlxpanel)
+        self.lxbutton.set_tooltip_text("Start LXPanel")
+        self.lxlabel = gtk.Label("LX Panel is a panel with a simple application menu, system tray, and window switcher. It is lightweight with an application menu.")
+        self.lxlabel.set_line_wrap(True)
+        self.lxlabel.set_padding(4, 0)
 
-if [ "$panel" = "tint2" ]
-	then dialog --title "ObRevenge Panel Switcher" --msgbox "Tint2 requires logging out and logging back in for the change to take effect. Please press enter to logout." 15 50;oblogout
+        # Button and Label for XFCE Panel
+        self.xfcebutton = gtk.Button("XFCE4 Panel")
+        self.xfcebutton.connect("clicked", self.startxfce)
+        self.xfcebutton.set_tooltip_text("Start XFCE4 Panel")
+        self.xfcelabel = gtk.Label("XFCE4 Panel features the searchable whisker menu as well as the system tray and window switcher. It is the most full featured option.")
+        self.xfcelabel.set_line_wrap(True)
+        self.xfcelabel.set_padding(20, 0)
 
-fi
+        # Creating box containers
+        self.vbox = gtk.VBox()
+        self.hbox1 = gtk.HBox()
+        self.hbox1.pack_start(self.tintbutton)
+        self.hbox1.pack_start(self.tintlabel)
+        self.hbox2 = gtk.HBox()
+        self.hbox2.pack_start(self.lxbutton)
+        self.hbox2.pack_start(self.lxlabel)
+        self.hbox3 = gtk.HBox()
+        self.hbox3.pack_start(self.xfcebutton)
+        self.hbox3.pack_start(self.xfcelabel)
 
+        # Placing items
+        self.window.add(self.vbox)
+        self.vbox.add(self.hbox1)
+        self.vbox.add(self.hbox2)
+        self.vbox.add(self.hbox3)
+        self.window.show_all()
+        self.window.connect("destroy", self.destroy)
 
-disown
+    def main(self):
+        gtk.main()
 
-clear 
+# Running Main Window
+if __name__== "__main__":
+    base = Base()
+    base.main()

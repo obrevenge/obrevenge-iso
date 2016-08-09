@@ -1,7 +1,7 @@
 [Desktop Entry]
 Version=1.0
 Type=Application
-Name=Desktop Preferences
+Name=Desktop
 Comment=Desktop Preferences for OBRevenge
 Categories=Utility;
 Exec=pcmanfm --desktop-pref
