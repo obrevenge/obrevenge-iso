@@ -1,0 +1,23 @@
+---
+componentName:  obrevenge
+
+strings:
+    productName:         OBRevenge Linux
+    shortProductName:    OBRevenge
+    version:             1.0
+    shortVersion:        1.0
+    versionedName:       OBRevenge 1.0
+    shortVersionedName:  OBRevenge 1.0
+    bootloaderEntryName: OBRevenge
+
+images:
+    productLogo:         "squid.png"
+    productIcon:         "logo.png"
+    productWelcome:      "languages.png"
+
+slideshow:               "show.qml"
+
+style:
+   sidebarBackground:    "#292F34"
+   sidebarText:          "#FFFFFF"
+   sidebarTextSelect:    "#292F34"

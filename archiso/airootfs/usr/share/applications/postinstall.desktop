@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Application
+Name=Post Install Cleanup
+Comment=Cleanup tool for OBRevenge
+Categories=Utility;
+Exec=postinstall.sh
+Icon=/usr/share/icons/Faenza/places/scalable/archlinux-logo.svg

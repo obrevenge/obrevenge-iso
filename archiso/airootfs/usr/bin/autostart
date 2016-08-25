@@ -1,0 +1,13 @@
+#!/bin/bash
+
+ans=$(zenity  --list  --text "Do you want to add or remove an item from Autostart?" --radiolist  --column "Select" --column "Add/Remove" TRUE Add FALSE Remove)
+
+if [ "$ans" = "Add" ]
+		then addanswer=$(zenity --entry --text "What application do you want to autostart?" --entry-text "ex: lxterminal"); echo "$addanswer &" >> ~/.config/openbox/autostart
+
+		elif [ "$ans" = "Remove"  ]
+		then remanswer=$(zenity --entry --text "What application do you want to remove from Autostart?" --entry-text "ex: lxterminal"); sed -i "/$remanswer/d" ~/.config/openbox/autostart
+
+		else exit
+
+fi

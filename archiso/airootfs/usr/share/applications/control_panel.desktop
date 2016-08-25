@@ -1,0 +1,8 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Control Panel
+Comment=Control Panel for OBRevenge
+Categories=Utility;Settings;
+Exec=control_panel
+Icon=/usr/share/icons/Faenza/categories/scalable/xfce4-settings.svg
