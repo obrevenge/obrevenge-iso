@@ -33,13 +33,15 @@
     </property>
     <property name="plugin-6" type="string" value="systray">
       <property name="names-visible" type="array">
+        <value type="string" value="vlc"/>
         <value type="string" value="networkmanager applet"/>
-        <value type="string" value="insync.py"/>
-        <value type="string" value="synapse"/>
-        <value type="string" value="parcellite"/>
-        <value type="string" value="pamac-tray"/>
-        <value type="string" value="xfce4-power-manager"/>
+        <value type="string" value="simplescreenrecorder"/>
         <value type="string" value="volumeicon"/>
+        <value type="string" value="synapse"/>
+        <value type="string" value="pamac-tray"/>
+        <value type="string" value="parcellite"/>
+        <value type="string" value="xfce4-power-manager"/>
+        <value type="string" value="insync.py"/>
       </property>
       <property name="show-frame" type="bool" value="false"/>
     </property>

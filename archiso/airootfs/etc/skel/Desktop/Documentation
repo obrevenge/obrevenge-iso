@@ -3,14 +3,19 @@ Thank you for trying OBRevenge!
 There are a few unique features that I hope you enjoy.
 
 **First**
-	To install select Install OBRevenge from the Desktop. This is a command line installer based on the Pacbang Installer written by Carl Duff. There is also an easy graphical installer.
+	To install select Install OBRevenge from the Desktop. There is a command line installer based on the Pacbang Installer written by Carl Duff. There is also an easy graphical installer.
 
 **Second**
-	Support for the Arch User Repository (yaourt) is included by default. 
+	Support for the Arch User Repository (yaourt) is included by default. AUR packages may also be installed and updated via Pamac if you select this option in the Pamac preferences.
 
 **Pacman Issues
 	If you experience problems with installing packages, run the following command in the terminal to update the pacman database files.
 	sudo pacman -Syy
+
+**Theming
+	Most of the default application in OBRevenge are GTK; however, in order to try to keep the theming consisten there is also a QT Theme option in the control panel. This will allow you to tweak the theming of QT applications. It is set by default to attempt to mirror the GTK theming of the system.
+
+**For quick search and launcing applications, synapse is installed and running by default. The hot keys to start it from the keyboard are control and space pressed together!
 
 There is a home grown application included called Panel Switcher. This is a gui script that I created using dialog. It will allow you to choose between 3 panels for your system. These panels are tint2 (default), lxpanel, and xfce4-panel. The changes will take effect immediately and persist on logout. All three panels are already configured and themed. Enjoy.
 

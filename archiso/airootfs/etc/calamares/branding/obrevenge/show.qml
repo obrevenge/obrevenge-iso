@@ -126,8 +126,8 @@ Presentation
         Text {
             anchors.horizontalCenter: background5.horizontalCenter
             anchors.top: background5.bottom
-            text: "We appreciate you choosing OBRevenge, and hope you enjoy<br/>"+
-                  "it as much as we do making it! If you have any questions<br/>"+
+            text: "I appreciate you choosing OBRevenge, and hope you enjoy<br/>"+
+                  "it as much as I do making it! If you have any questions<br/>"+
                   "or feedback, please feel free to leave a comment on the download page."
             wrapMode: Text.WordWrap
             width: 600

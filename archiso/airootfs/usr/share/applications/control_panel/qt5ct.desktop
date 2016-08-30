@@ -1,0 +1,8 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=QT Themes
+Comment=Theming for QT Applications
+Categories=Utility;Settings
+Exec=qt5ct
+Icon=preferences-desktop-theme

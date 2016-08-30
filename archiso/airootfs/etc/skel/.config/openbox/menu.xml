@@ -350,6 +350,15 @@
       </startupnotify>
     </action>
   </item>
+  <item label="Add Launcher to Desktop">
+    <action name="Execute">
+      <command>addlauncher</command>
+      <startupnotify>
+        <enabled>no</enabled>
+        <icon>cups</icon>
+      </startupnotify>
+    </action>
+  </item>
 </menu>
 
 <menu id="root-menu" label="Openbox 3">

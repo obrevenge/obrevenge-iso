@@ -75,11 +75,16 @@ parcellite
 squashfs-tools
 calamares
 mkinitcpio-openswap
+arandr
+synapse
+qt5ct
+qt5-styleplugins
 
 #print support
 cups
 ghostscript
 gsfonts
+system-config-printer
 
 #desktop manager
 lightdm 
@@ -96,7 +101,7 @@ lxterminal
 pcmanfm
 screenfetch
 google-chrome
-gedit
+mousepad
 ranger
 terminus-font
 archlinux-wallpaper
