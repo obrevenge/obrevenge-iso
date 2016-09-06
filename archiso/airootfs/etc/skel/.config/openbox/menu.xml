@@ -362,11 +362,20 @@
 </menu>
 
 <menu id="root-menu" label="Openbox 3">
-  <separator/>
   <menu execute="openbox-menu" id="desktop-app-menu" label="Applications"/>
-  <separator label="Desktop" />
-  <menu id="desktop-menu" label="Desktop Preferences"/>
   <separator />
+  <item label="Wallpaper">
+    <action name="Execute">
+      <command>nitrogen</command>
+    </action>
+  </item>
+  <separator />
+  <item label="Control Panel">
+    <action name="Execute">
+      <command>control_panel</command>
+    </action>
+  </item>  
+  <separator/>
   <item label="Log Out">
     <action name="Execute">
       <command>oblogout</command>

@@ -6,8 +6,7 @@ if [ "$USER" = "liveuser" ]
 	then exit
 	else
 		rm /usr/share/applications/calamares.desktop
-		rm ~/Desktop/abif.desktop
-		rm ~/Desktop/calamares.desktop
+		rm /usr/share/applications/abif.desktop
 		sed -i "/postinstall.sh/d" ~/.config/openbox/autostart
 fi
 

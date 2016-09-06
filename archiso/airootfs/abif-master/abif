@@ -1802,7 +1802,7 @@ install_root_menu() {
              ;;
         "3") install_bootloader
              ;;
-          *) config_base_menu
+          *) install_root_menu
              ;;
      esac
     

@@ -1,8 +1,0 @@
-#!/bin/bash
-
-# This is a simple dialog to create a folder on the desktop
-
-zenity --entry --text "What do you want to call your new folder?" --entry-text "new folder" > .folder.txt
-folder=` cat .folder.txt `
-mkdir ~/Desktop/$folder
-rm .folder.txt

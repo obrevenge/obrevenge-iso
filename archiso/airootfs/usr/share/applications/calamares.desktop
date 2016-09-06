@@ -4,4 +4,4 @@ Name=Install OBRevenge
 Comment=Installer for OBRevenge
 Categories=Utility;
 Exec=sudo calamares
-Icon=/usr/share/icons/Faenza/places/scalable/archlinux-logo.svg
+Icon=/usr/share/Icons/obrevenge-redhd.png

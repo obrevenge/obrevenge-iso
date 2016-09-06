@@ -97,12 +97,13 @@ lxpanel
 tint2
 xfce4-panel
 xfce4-whiskermenu-plugin
-lxterminal
+terminator
 pcmanfm
-screenfetch
+neofetch
+w3m
+imagemagick
 google-chrome
 mousepad
-ranger
 terminus-font
 archlinux-wallpaper
 lxappearance-obconf
@@ -115,14 +116,15 @@ xfce4-dockbarx-plugin-git
 audacious
 vlc
 qt4
-libreoffice-fresh
 gimp
+nitrogen
 
 # themes
 numix-themes
 numix-icon-theme-git
 faenza-icon-theme
-flattr-icon-theme
+openbox-arc-git
+gtk-theme-arc-git
 
 #network
 networkmanager 

@@ -21,7 +21,7 @@ compton -b &
 xfce4-panel &
 nm-applet &
 volumeicon &
-pcmanfm --desktop &
+nitrogen --restore &
 /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
 xfce4-power-manager &
 parcellite &

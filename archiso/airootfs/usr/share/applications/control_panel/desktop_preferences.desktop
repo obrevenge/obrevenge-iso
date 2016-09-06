@@ -1,8 +1,8 @@
 [Desktop Entry]
 Version=1.0
 Type=Application
-Name=Desktop
-Comment=Desktop Preferences for OBRevenge
-Categories=Utility;
-Exec=pcmanfm --desktop-pref
+Name=Wallpaper
+Comment=Wallpaper Setter for OBRevenge
+Categories=Utility;Settings
+Exec=nitrogen
 Icon=preferences-desktop-theme

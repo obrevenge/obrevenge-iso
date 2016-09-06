@@ -1,5 +1,0 @@
-#!/bin/bash
-
-launcher=$(zenity --file-selection --title="Select the Application to Add to the Desktop" --filename=/usr/share/applications/arandr.desktop)
-
-cp $launcher ~/Desktop

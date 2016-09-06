@@ -29,7 +29,7 @@ Plugin {
 Plugin {
   type=menu
   Config {
-    image=/usr/share/lxpanel/images/my-computer.png
+    image=/usr/share/Icons/obrevenge-redhd.png
     system {
     }
     separator {
