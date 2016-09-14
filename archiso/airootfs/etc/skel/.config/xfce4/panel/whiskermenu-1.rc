@@ -1,7 +1,7 @@
-favorites=calamares.desktop,abif.desktop,terminator.desktop,exo-file-manager.desktop,google-chrome.desktop
-recent=terminator.desktop,exo-file-manager.desktop,google-chrome.desktop,exo-terminal-emulator.desktop
+favorites=calamares.desktop,terminator.desktop,exo-file-manager.desktop,google-chrome.desktop
+recent=exo-file-manager.desktop,vlc.desktop,terminator.desktop,google-chrome.desktop,exo-terminal-emulator.desktop
 button-title=Applications
-button-icon=/usr/share/Icons/obrevenge-red.svg
+button-icon=/usr/share/Icons/obrevenge-redhd2.png
 button-single-row=false
 show-button-title=false
 show-button-icon=true

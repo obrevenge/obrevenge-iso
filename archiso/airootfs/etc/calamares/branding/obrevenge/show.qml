@@ -84,9 +84,9 @@ Presentation
         Text {
             anchors.horizontalCenter: background3.horizontalCenter
             anchors.top: background3.bottom
-            text: "OBRevenge is designed to provide an Arch Linux experience to<br/>"+
-                  "users who may not be confortable installing the system<br/>"+
-                  "the Arch way."
+            text: "Using the exclusive OBRevenge Software Install Tool<br/>"+
+                  "you can install your own preferred apps for Internet, Media, and Office.<br/>"+
+                  "You can make OBRevenge completely yours!"
             wrapMode: Text.WordWrap
             width: 600
             horizontalAlignment: Text.Center

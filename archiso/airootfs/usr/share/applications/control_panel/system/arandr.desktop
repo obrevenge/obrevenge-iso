@@ -4,5 +4,5 @@ Type=Application
 Name=Display Settings
 Comment=Control Panel for OBRevenge
 Categories=Utility;Settings
-Exec=arandr
+Exec=arandr-wr.sh
 Icon=preferences-desktop-theme

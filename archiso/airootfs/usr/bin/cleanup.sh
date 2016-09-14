@@ -9,6 +9,9 @@ rm /usr/share/applications/exo-preferred-applications.desktop
 rm /usr/share/applications/pamac-manager.desktop
 rm /usr/share/applications/lxappearance.desktop
 rm /usr/share/applications/pamac-updater.desktop
+rm /usr/share/applications/arandr.desktop
+rm /usr/share/applications/xfce4-power-manager-settings.desktop
+rm /usr/share/applications/users.desktop
 systemctl enable org.cups.cupsd.service
 systemctl enable ntpd.service
 

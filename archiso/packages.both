@@ -79,6 +79,7 @@ arandr
 synapse
 qt5ct
 qt5-styleplugins
+boost
 
 #print support
 cups
@@ -98,15 +99,12 @@ tint2
 xfce4-panel
 xfce4-whiskermenu-plugin
 terminator
-lxterminal
 pcmanfm
 neofetch
 w3m
 imagemagick
-google-chrome
-mousepad
+leafpad
 terminus-font
-archlinux-wallpaper
 lxappearance-obconf
 obconf
 feh
@@ -114,11 +112,9 @@ cmatrix
 compton
 oblogout
 xfce4-dockbarx-plugin-git
-audacious
-vlc
 qt4
-gimp
 nitrogen
+galculator-gtk2
 
 # themes
 numix-themes
@@ -134,7 +130,6 @@ networkmanager-dispatcher-ntpd
 
 # installer
 wipe
-geany
 
 # archiso
 arch-install-scripts

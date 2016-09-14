@@ -2,35 +2,52 @@ Thank you for trying OBRevenge!
 
 There are a few unique features that I hope you enjoy.
 
+There is a small wiki page located at:
+https://github.com/ajjames31/obrevenge-iso/wiki
+
 **First**
-	To install select Install OBRevenge from the Desktop. There is a command line installer based on the Pacbang Installer written by Carl Duff. There is also an easy graphical installer.
+	To install select Install OBRevenge from the menu. 
 
 **Second**
-	Support for the Arch User Repository (yaourt) is included by default. AUR packages may also be installed and updated via Pamac if you select this option in the Pamac preferences.
+	Support for the Arch User Repository (yaourt) is 
+	included by default. AUR packages may also be installed and updated via Pamac if you select this option in the Pamac preferences.
 
 **Pacman Issues
-	If you experience problems with installing packages, run the following command in the terminal to update the pacman database files.
+	If you experience problems with installing packages, 
+	run the following command in the terminal to update the pacman database files.
 	sudo pacman -Syy
 
 **Theming
-	Most of the default application in OBRevenge are GTK; however, in order to try to keep the theming consisten there is also a QT Theme option in the control panel. This will allow you to tweak the theming of QT applications. It is set by default to attempt to mirror the GTK theming of the system.
+	Most of the default application in OBRevenge are GTK; however, 
+	in order to try to keep the theming consisten there is also a QT 
+	Theme option in the control panel. This will allow you to tweak 
+	the theming of QT applications. It is set by default to attempt 
+	to mirror the GTK theming of the system.
 
-**For quick search and launcing applications, synapse is installed and running by default. The hot keys to start it from the keyboard are control and space pressed together!
+**For quick search and launcing applications, synapse is installed 
+	and running by default. The hot keys to start it from the keyboard 
+	are control and space pressed together!
 
-There is a home grown application included called Panel Switcher. This is a gui script that I created using dialog. It will allow you to choose between 3 panels for your system. These panels are tint2 (default), lxpanel, and xfce4-panel. The changes will take effect immediately and persist on logout. All three panels are already configured and themed. Enjoy.
+There is a home grown application included called Panel Switcher. 
+This is a gui script that I created using dialog. It will allow you to 
+choose between 3 panels for your system. These panels are tint2 (default), 
+lxpanel, and xfce4-panel. The changes will take effect immediately and 
+persist on logout. All three panels are already configured and themed. Enjoy.
 
-There is another home grown application included called OBRevenge Autostart. It will allow you to select applications to startup on logon, or remove applications from the autostart list. 
+There is another home grown application included called OBRevenge Autostart. 
+It will allow you to select applications to startup on logon, or remove 
+applications from the autostart list. 
 
-I added a custom Control Panel for this release. It is titled "Control Panel", and it will give you one place to look for most of your configuration options. This is one thing that is usually missing in lightweight desktops, and I hope it helps out.
+I added a custom Control Panel for this release. It is titled
+ "Control Panel", and it will give you one place to look for most of your 
+configuration options. This is one thing that is usually missing in 
+lightweight desktops, and I hope it helps out.
 
-Pamac, the package manager and update manager from Manjaro, is installed to provide a gui method of installing packages or updating. This spin is designed to be lightweight, and to allow the user to install their own perferred applications. My goal was to provide a stable and user-friendly base for users to build their desired system on top of.
+Pamac, the package manager and update manager from Manjaro, 
+is installed to provide a gui method of installing packages or updating. 
+This spin is designed to be lightweight, and to allow the user to install 
+their own perferred applications. My goal was to provide a stable and 
+user-friendly base for users to build their desired system on top of.
 
-
-Below I have listed some aliaes that are included that you can use in the command line.
-
-alias pac="sudo pacman -S"
-alias pacs="sudo pacman -Ss"
-alias pacu="sudo pacman -Syy"
-alias update="sudo pacman -Syu"
 
 Thank you, and Enjoy!
