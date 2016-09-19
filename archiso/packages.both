@@ -70,6 +70,7 @@ gksu
 liboobs
 system-tools-backends
 gnome-system-tools
+gnome-disk-utility
 xfce4-power-manager
 parcellite
 squashfs-tools
@@ -118,7 +119,6 @@ galculator-gtk2
 
 # themes
 numix-themes
-numix-icon-theme-git
 faenza-icon-theme
 openbox-arc-git
 gtk-theme-arc-git

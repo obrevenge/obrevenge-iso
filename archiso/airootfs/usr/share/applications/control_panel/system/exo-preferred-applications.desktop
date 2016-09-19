@@ -1,7 +1,7 @@
 [Desktop Entry]
 Version=1.0
 Exec=exo-preferred-applications
-Icon=preferences-desktop-default-applications
+Icon=/usr/share/icons/Faenza/categories/48/applications-accessories.png
 Type=Application
 Categories=XFCE;GTK;Settings;DesktopSettings;X-XFCE-SettingsDialog;X-XFCE-PersonalSettings;
 OnlyShowIn=XFCE;

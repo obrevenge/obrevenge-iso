@@ -4,17 +4,14 @@
 # By Jody James
 
 # Making Variables from Applications Lists
-int=` cat /etc/obrevenge/.tmp/int.txt `
-med=` cat /etc/obrevenge/.tmp/med.txt `
-off=` cat /etc/obrevenge/.tmp/off.txt `
+int=` cat /etc/obrevenge/.tmp/int2.txt `
+med=` cat /etc/obrevenge/.tmp/med2.txt `
+off=` cat /etc/obrevenge/.tmp/off2.txt `
 
 
 # Installing Selecting Applications
 (
-echo "10"
-echo "Updating Package Databases..."
-sudo pacman -Syy
-
+sleep 2
 echo "25"
 echo "# Installing Internet Applications..."
 sudo pacman -S --noconfirm $int
@@ -37,3 +34,6 @@ echo "# Installation Finished!"
 
 ) | zenity --progress \
 	-- title="OBRevenge Software Tool" \ 
+	--text="Preparring for Installation" \
+	--percentage=10 \
+	--pulsate

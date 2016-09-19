@@ -18,16 +18,16 @@ class Base:
         gtk.main_quit()
 
     def internet(self, widget):
-        os.system("internetlist.sh")
+        os.system("internetlist2.sh")
 
     def media(self, widget):
-        os.system("medialist.sh")
+        os.system("medialist2.sh")
 
     def office(self, widget):
-        os.system("officelist.sh")
+        os.system("officelist2.sh")
 
     def install(self, widget):
-        os.system("installapps.sh")
+        os.system("installapps2.sh")
 
     def __init__(self):
         self.window = gtk.Window(gtk.WINDOW_TOPLEVEL)
@@ -51,11 +51,11 @@ class Base:
         self.installbutton.set_tooltip_text("Click to Begin Installation")
 
 # Making Labels
-        self.label = gtk.Label("This is a list of the default software selections. If this list is ok with you, there is no need to select your own software. Simply click the install button below. Internet: Firefox, Thunderbird  Office: LibreOffice, Evince PDF  Media: Gimp, Audacious,VLC.")
+        self.label = gtk.Label("Please select the software that you would like to install by clicking on each of the below categories and clicking on the boxes for your desired programs.")
         self.label.set_line_wrap(True)
         self.label.set_justify(gtk.JUSTIFY_CENTER)
 
-        self.label2 = gtk.Label("If you would like to customize the selections, please click on the above categories to select what software you would like to install. After you have selected all of the software that you want to install, click on the Install button below. Depending on the speed of your internet connection, it may take a few minutes to install all of the selected software.")
+        self.label2 = gtk.Label("When you are finished selecting the software that you would like to install, simply click the \"Install your selected software with one click\" button below.")
         self.label2.set_line_wrap(True)
         self.label.set_justify(gtk.JUSTIFY_CENTER)
         
