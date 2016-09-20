@@ -1,0 +1,8 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=OBRevenge Wallpaper Download Tool
+Comment=Wallpaper Download Tool for OBRevenge
+Categories=Utility;
+Exec=getwallpapers.sh
+Icon=/usr/share/icons/Faenza/categories/48/package_graphics.png
