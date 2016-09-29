@@ -99,9 +99,8 @@ lxpanel
 tint2
 xfce4-panel
 xfce4-whiskermenu-plugin
-terminator
 pcmanfm
-neofetch
+xfce4-terminal
 w3m
 imagemagick
 leafpad
@@ -116,6 +115,7 @@ xfce4-dockbarx-plugin-git
 qt4
 nitrogen
 galculator-gtk2
+obkey-git
 
 # themes
 numix-themes

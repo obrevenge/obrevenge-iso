@@ -17,5 +17,5 @@ MiscTabCloseMiddleClick=TRUE
 MiscTabPosition=GTK_POS_TOP
 MiscHighlightUrls=TRUE
 DropdownWidth=100
-BackgroundDarkness=0.250000
+BackgroundDarkness=0.850000
 

@@ -4,12 +4,6 @@
 
 
 <menu id="root-menu" label="Openbox 3">
-  <separator label="Install"/>
-    <item label="Install OBRevenge">
-    <action name="Execute">
-      <command>sudo calamares</command>
-    </action>
-  </item>
   <separator label="Apps"/>
   <item label="Synapse (Ctrl+space)">
     <action name="Execute">
@@ -23,7 +17,7 @@
     </action>
   </item>
   <separator />
-  <item label="Terminal (Alt+Cont+t)">
+  <item label="Terminal (Alt+Ctrl+t)">
     <action name="Execute">
       <command>xfce4-terminal</command>
     </action>

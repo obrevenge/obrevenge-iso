@@ -12,6 +12,9 @@ rm /usr/share/applications/pamac-updater.desktop
 rm /usr/share/applications/arandr.desktop
 rm /usr/share/applications/xfce4-power-manager-settings.desktop
 rm /usr/share/applications/users.desktop
+rm /usr/share/applications/obkey.desktop
+rm /etc/skel/.config/openbox/menu.xml
+mv /etc/menu2.xml /etc/skel/.config/openbox/menu.xml
 systemctl enable org.cups.cupsd.service
-systemctl enable ntpd.service
+
 

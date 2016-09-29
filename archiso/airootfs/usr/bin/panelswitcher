@@ -33,39 +33,44 @@ class Base:
         self.window.set_size_request(400, 200)
         self.window.set_title("OBRevenge Panel Switcher")
 
-        # Button and Label for Tint2        
+        # Button for Tint2        
         self.tintbutton = gtk.Button("Tint2")
         self.tintbutton.connect("clicked", self.starttint)
         self.tintbutton.set_tooltip_text("Start Tint2")
-        self.tintlabel = gtk.Label("Tint2 Panel is a simple panel that shows the system tray and open windows.")
-        self.tintlabel.set_line_wrap(True)
+        
 
-        # Button and Label for LXPanel
+        # Button for LXPanel
         self.lxbutton = gtk.Button("LXPanel")
         self.lxbutton.connect("clicked", self.startlxpanel)
         self.lxbutton.set_tooltip_text("Start LXPanel")
-        self.lxlabel = gtk.Label("LX Panel is a panel with a simple application menu, system tray, and window switcher.")
-        self.lxlabel.set_line_wrap(True)
+        
 
-        # Button and Label for XFCE Panel
+        # Button for XFCE Panel
         self.xfcebutton = gtk.Button("XFCE4")
         self.xfcebutton.connect("clicked", self.startxfce)
         self.xfcebutton.set_tooltip_text("Start XFCE4 Panel")
-        self.xfcelabel = gtk.Label("XFCE4 Panel features the searchable whisker menu, system tray, and window switcher.")
-        self.xfcelabel.set_line_wrap(True)
+        
+        
+        # Making Image
+        self.pix = gtk.gdk.pixbuf_new_from_file_at_size("/usr/share/Icons/obrevenge-redhd.png", 100, 100)
+        self.image = gtk.Image()
+        self.image.set_from_pixbuf(self.pix)
+        
+        # Making Label
+        self.label = gtk.Label("Please Select Your Preferred Panel.")
 
         # Creating box containers
-        self.hbox4 = gtk.HBox()
-        self.hbox4.pack_start(self.tintbutton)
-        self.hbox4.pack_start(self.lxbutton)
-        self.hbox4.pack_start(self.xfcebutton)
-        self.vbox = gtk.VBox()
         self.hbox1 = gtk.HBox()
-        self.hbox1.pack_start(self.tintlabel)
+        self.hbox1.pack_start(self.tintbutton)
+        self.hbox1.pack_start(self.lxbutton)
+        self.hbox1.pack_start(self.xfcebutton)
+        self.vbox = gtk.VBox()
+        self.hbox4 = gtk.HBox()
+        self.hbox4.pack_start(self.image)
         self.hbox2 = gtk.HBox()
-        self.hbox2.pack_start(self.lxlabel)
+        self.hbox2.pack_start(self.label)
         self.hbox3 = gtk.HBox()
-        self.hbox3.pack_start(self.xfcelabel)
+        
 
         # Placing items
         self.window.add(self.vbox)
