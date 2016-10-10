@@ -1,0 +1,8 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=OBRevenge Pacman Mirrorlist Tool
+Comment=Tool to Sort the fastest download mirrors for OBRevenge
+Categories=Utility;Settings
+Exec=gksu updatemirrorlist.sh
+Icon=obconf
