@@ -1,0 +1,8 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=OBRevenge Welcome
+Comment=Welcom Message for OBRevenge
+Categories=Utility;
+Exec=obwelcome
+Icon=/usr/share/Icons/obrevenge-redhd2.png

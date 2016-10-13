@@ -1,0 +1,61 @@
+favorites=calamares.desktop,exo-file-manager.desktop,xfce4-terminal.desktop
+recent=guvcview.desktop,org.gnome.DiskUtility.desktop,xfce4-terminal.desktop,exo-file-manager.desktop
+button-title=Applications
+button-icon=/usr/share/Icons/obrevenge-redhd2.png
+button-single-row=false
+show-button-title=false
+show-button-icon=true
+launcher-show-name=true
+launcher-show-description=true
+launcher-show-tooltip=true
+item-icon-size=2
+hover-switch-category=true
+category-icon-size=1
+load-hierarchy=false
+recent-items-max=10
+favorites-in-recent=true
+display-recent-default=false
+position-search-alternate=true
+position-commands-alternate=true
+position-categories-alternate=true
+menu-width=453
+menu-height=564
+menu-opacity=100
+command-settings=control_panel
+show-command-settings=true
+command-lockscreen=xflock4
+show-command-lockscreen=false
+command-switchuser=gdmflexiserver
+show-command-switchuser=false
+command-logout=oblogout
+show-command-logout=true
+command-menueditor=menulibre
+show-command-menueditor=false
+command-profile=mugshot
+show-command-profile=false
+search-actions=4
+
+[action0]
+name=Man Pages
+pattern=#
+command=exo-open --launch TerminalEmulator man %s
+regex=false
+
+[action1]
+name=Wikipedia
+pattern=!w
+command=exo-open --launch WebBrowser https://en.wikipedia.org/wiki/%u
+regex=false
+
+[action2]
+name=Run in Terminal
+pattern=!
+command=exo-open --launch TerminalEmulator %s
+regex=false
+
+[action3]
+name=Open URI
+pattern=^(file|http|https):\\/\\/(.*)$
+command=exo-open \\0
+regex=true
+

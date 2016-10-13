@@ -1,0 +1,16 @@
+#!/bin/bash
+
+# Sample Control Panel for LXDE
+
+yad --plug=46915 --tabnum=1 --icons --read-dir="/usr/share/applications/control_panel/customization/" --sort-by-name --single-click width=1050 --height=500 &>res1 &
+
+yad --plug=46915 --tabnum=2 --icons --read-dir="/usr/share/applications/control_panel/system/" --sort-by-name --single-click width=1050 --height=500 &>res2 &
+
+yad --plug=46915 --tabnum=3 --icons --read-dir="/usr/share/applications/control_panel/software/" --sort-by-name --single-click width=1050 --height=500 &>res3 &
+
+yad --notebook --key=46915 --tab="Customization" --tab="System" --tab="Software" width=1050 --height=500 --window-icon=preferences-desktop --image=preferences-desktop --image-on-top --center \
+--title="OBRevenge Control Panel" --text='<span font_weight="bold">Change desktop, system and device settings</span>\nSome utilities require the administrator password.' --buttons-layout=spread --button="System Info":"xfce4-terminal -H -e neofetch" --button="System Monitor":"xfce4-terminal -H -e htop" --button=gtk-close --width=500
+
+rm res1
+rm res2
+rm res3
