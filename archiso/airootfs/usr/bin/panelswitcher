@@ -22,10 +22,10 @@ class Base:
         os.system("sed -i -e 's/mate-panel/tint2/g' ~/.config/openbox/autostart;sed -i -e 's/xfce4-panel/tint2/g' ~/.config/openbox/autostart;sed -i -e 's/lxpanel/tint2/g' ~/.config/openbox/autostart;killall xfce4-panel;killall lxpanel;killall mate-panel;nohup tint2 > /dev/null 2> /dev/null &")
 
     def startlxpanel(self, widget):
-        os.system("sed -i -e 's/mate-panel/lxpanel/g' ~/.config/openbox/autostart;sed -i -e 's/xfce4-panel/lxpanel/g' ~/.config/openbox/autostart;sed -i -e 's/tint2/lxpanel/g' ~/.config/openbox/autostart;killall tint2;killall mate-panel;killall xfce4-panel;nohup lxpanel > /dev/null 2> /dev/null &")
+        os.system("sed -i -e 's/edge=bottom/edge=top/g' ~/.config/lxpanel/default/panels/panel;sed -i -e 's/mate-panel/lxpanel/g' ~/.config/openbox/autostart;sed -i -e 's/xfce4-panel/lxpanel/g' ~/.config/openbox/autostart;sed -i -e 's/tint2/lxpanel/g' ~/.config/openbox/autostart;killall lxpanel;killall tint2;killall mate-panel;killall xfce4-panel;nohup lxpanel > /dev/null 2> /dev/null &")
 
     def startxfce(self, widget):
-        os.system("sed -i -e 's/mate-panel/xfce4-panel/g' ~/.config/openbox/autostart;sed -i -e 's/tint2/xfce4-panel/g' ~/.config/openbox/autostart;sed -i -e 's/lxpanel/xfce4-panel/g' ~/.config/openbox/autostart;killall mate-panel;killall tint2;killall lxpanel;nohup xfce4-panel > /dev/null 2> /dev/null &")
+        os.system("sed -i -e 's/p=12/p=6/g' ~/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-panel.xml;sed -i -e 's/mate-panel/xfce4-panel/g' ~/.config/openbox/autostart;sed -i -e 's/tint2/xfce4-panel/g' ~/.config/openbox/autostart;sed -i -e 's/lxpanel/xfce4-panel/g' ~/.config/openbox/autostart;killall xfce4-panel;killall mate-panel;killall tint2;killall lxpanel;nohup xfce4-panel > /dev/null 2> /dev/null &")
         
     def startmate(self, widget):
 		os.system("rm ~/.config/dconf/user;cp ~/.config/dconf/user.ob ~/.config/dconf/user;sed -i -e 's/tint2/mate-panel/g' ~/.config/openbox/autostart;sed -i -e 's/xfce4-panel/mate-panel/g' ~/.config/openbox/autostart;sed -i -e 's/lxpanel/mate-panel/g' ~/.config/openbox/autostart;killall mate-panel;killall xfce4-panel;killall lxpanel;killall tint2;nohup mate-panel > /dev/null 2> /dev/null &")
@@ -38,6 +38,9 @@ class Base:
         
     def matelayout(self, widget):
         os.system("rm ~/.config/dconf/user;cp ~/.config/dconf/user.mate ~/.config/dconf/user;sed -i -e 's/tint2/mate-panel/g' ~/.config/openbox/autostart;sed -i -e 's/xfce4-panel/mate-panel/g' ~/.config/openbox/autostart;sed -i -e 's/lxpanel/mate-panel/g' ~/.config/openbox/autostart;killall xfce4-panel;killall lxpanel;killall tint2;killall mate-panel;killall docky;nohup mate-panel > /dev/null 2> /dev/null &")
+        
+    def lxdelayout(self, widget):
+		os.system("sed -i -e 's/edge=top/edge=bottom/g' ~/.config/lxpanel/default/panels/panel;sed -i -e 's/mate-panel/lxpanel/g' ~/.config/openbox/autostart;sed -i -e 's/xfce4-panel/lxpanel/g' ~/.config/openbox/autostart;sed -i -e 's/tint2/lxpanel/g' ~/.config/openbox/autostart;killall docky;killall lxpanel;killall tint2;killall mate-panel;killall xfce4-panel;nohup lxpanel > /dev/null 2> /dev/null &")	
 
     def __init__(self):
         self.window = gtk.Window(gtk.WINDOW_TOPLEVEL)
@@ -76,11 +79,16 @@ class Base:
         self.dockoffbutton.set_tooltip_text("Remove Dock")
         
         # Buttons for Preconfigured Layouts
-        self.matelayoutbutton = gtk.Button("MATE Layout")
+        self.matelayoutbutton = gtk.Button("Mate")
         self.matelayoutbutton.connect("clicked", self.matelayout)
-        self.openlayoutbutton = gtk.Button("Openbox Layout")
+        self.openlayoutbutton = gtk.Button("Openbox")
         self.openlayoutbutton.connect("clicked", self.starttint)
         self.openlayoutbutton.connect("clicked", self.startdock)
+        self.xfcelayoutbutton = gtk.Button("Hybrid")
+        self.xfcelayoutbutton.connect("clicked", self.startmate)
+        self.xfcelayoutbutton.connect("clicked", self.startdock)
+        self.lxdelayoutbutton = gtk.Button("LXDE")
+        self.lxdelayoutbutton.connect("clicked", self.lxdelayout)
         
         # Making Image
         self.pix = gtk.gdk.pixbuf_new_from_file_at_size("/usr/share/Icons/obrevenge-redhd.png", 100, 100)
@@ -90,7 +98,7 @@ class Base:
         # Making Labels
         self.label = gtk.Label("Please Select Your Preferred Panel. (OBR Style)")
         self.docklabel = gtk.Label("Would you like a Dock?")
-        self.layoutlabel = gtk.Label("Preconfigured Common Layouts")
+        self.layoutlabel = gtk.Label("Preconfigured Layouts")
 
         # Creating box containers
         self.hbox1 = gtk.HBox()
@@ -114,9 +122,11 @@ class Base:
         self.hbox7 = gtk.HBox()
         self.hbox7.pack_start(self.layoutlabel)
         self.hbox8 = gtk.HBox()
-        self.hbox8.set_homogeneous(20)
+        self.hbox8.set_homogeneous(10)
         self.hbox8.pack_start(self.matelayoutbutton)
         self.hbox8.pack_start(self.openlayoutbutton)
+        self.hbox8.pack_start(self.xfcelayoutbutton)
+        self.hbox8.pack_start(self.lxdelayoutbutton)
         self.hbox9 = gtk.HBox()
 
         # Placing items

@@ -28,6 +28,7 @@ pulseaudio-alsa
 xf86-input-synaptics
 xf86-input-keyboard
 xf86-input-mouse
+intel-ucode
 
 #base
 base-devel
@@ -69,7 +70,6 @@ openbox-xdgmenu
 gksu
 liboobs
 system-tools-backends
-gnome-system-tools
 gnome-disk-utility
 xfce4-power-manager
 parcellite
@@ -81,6 +81,8 @@ synapse
 qt5ct
 qt5-styleplugins
 boost
+pavucontrol
+pasystray-gtk2-standalone
 
 #print support
 cups
@@ -97,7 +99,8 @@ lightdm-gtk-greeter-settings
 openbox
 lxpanel
 tint2
-mate-panel
+mate-panel-gtk3
+mate-menu
 xfce4-panel
 xfce4-whiskermenu-plugin
 docky
@@ -116,7 +119,7 @@ oblogout
 qt4
 nitrogen
 galculator-gtk2
-obkey-git
+obkey
 neofetch
 conky
 scrot

@@ -37,12 +37,6 @@ wget -U "Mozilla/5.0" $(lynx --dump $url_wall_link | awk '/7yz4ma1/ && /jpg/ && 
 # Delete any file under 50k in size to avoid bad quality
 find . -type f -iname "*.jp*g" -size -50k -exec rm {} \;
 
-# Send the downloaded images to the wallpaper folder 
-find . -type f -iname "*.jp*g" -exec mv {} $real_wall_dir \;
-
-# Remove temp folder
-rm -rf $temp_wall_dir
-
 echo "#Downloading Finished!" && sleep 2
 
 ) | (zenity --progress \
@@ -51,6 +45,17 @@ echo "#Downloading Finished!" && sleep 2
 --pulsate \
 --auto-close)
 
-zenity --info --title="OBR Wallpaper Download" --text "Your wallpapers have been downloaded!"
+zenity --info --height=30 --title="OBR Wallpaper Download" --text "Your wallpapers have been downloaded!\n
+In the next window you can delete any Wallpapers that you do not want by right\n
+clicking and selecting 'move to trash'. When you are finished simply close the\n
+window and the remaining Wallpapers will be saved into the ~/Pictures/Wallpapers folder."
+
+pcmanfm $temp_wall_dir
+
+# Send the downloaded images to the wallpaper folder 
+find . -type f -iname "*.jp*g" -exec mv {} $real_wall_dir \;
+
+# Remove temp folder
+rm -rf $temp_wall_dir
 
 exit 0

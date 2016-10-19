@@ -20,10 +20,11 @@ screenlayout.sh &
 compton -b &
 xfce4-panel &
 nm-applet &
-volumeicon &
+pasystray &
 nitrogen --restore &
 /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
 xfce4-power-manager &
 parcellite &
 postinstall.sh &
 conky -c ~/.config/conky.conf &
+synapse --startup &

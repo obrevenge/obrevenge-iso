@@ -297,15 +297,6 @@
         </startupnotify>
       </action>
     </keybind>
-    <keybind key="C-space">
-      <action name="Execute">
-        <command>synapse</command>
-        <startupnotify>
-          <enabled>yes</enabled>
-          <name>synapse</name>
-        </startupnotify>
-      </action>
-    </keybind>
     <keybind key="C-t">
       <action name="Execute">
         <command>xfce4-terminal --drop-down</command>
@@ -315,7 +306,7 @@
         </startupnotify>
       </action>
     </keybind>
-    <keybind key="C-h">
+    <keybind key="A-h">
       <action name="Execute">
         <command>pcmanfm</command>
         <startupnotify>

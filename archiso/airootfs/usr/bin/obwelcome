@@ -26,6 +26,12 @@ class Base:
         
     def google(self, widget):
 		os.system("xdg-open https://plus.google.com/communities/115644675078865877931")
+        
+    def vbox(self, widget):
+        os.system("gksu vbox-clear.sh")
+        
+    def nvidia(self, widget):
+        os.system("gksu nvidia-driver.sh")
 
 
     def __init__(self):
@@ -51,8 +57,12 @@ class Base:
         self.installbutton.connect("clicked", self.install)
         self.readbutton = gtk.Button("Read Documentation")
         self.readbutton.connect("clicked", self.read)
-        self.googlebutton = gtk.Button("Join Google+ Community")
+        self.googlebutton = gtk.Button("Join G+ Community")
         self.googlebutton.connect("clicked", self.google)
+        self.vboxbutton = gtk.Button("Virtualbox Modules?")
+        self.vboxbutton.connect("clicked", self.vbox)
+        self.nvidiabutton = gtk.Button("NVIDIA Drivers")
+        self.nvidiabutton.connect("clicked", self.nvidia)
 
 # Making Containers
         self.vbox = gtk.VBox()
@@ -63,12 +73,17 @@ class Base:
         self.vbox1.pack_start(self.updatebutton)
         self.vbox1.pack_start(self.installbutton)
         self.vbox1.pack_start(self.readbutton)
-        self.vbox1.pack_start(self.googlebutton)
+        self.hbox1 = gtk.HBox()
+        self.hbox1.set_homogeneous(15)
+        self.hbox1.pack_start(self.vboxbutton)
+        self.hbox1.pack_start(self.googlebutton)
+        self.hbox1.pack_start(self.nvidiabutton)
 
 # Placing Items
         self.window.add(self.vbox)
         self.vbox.add(self.hbox)
         self.vbox.add(self.vbox1)
+        self.vbox1.add(self.hbox1)
 
 
         self.window.show_all()

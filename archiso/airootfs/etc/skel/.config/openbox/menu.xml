@@ -17,7 +17,7 @@
     </action>
   </item>
   <separator />
-  <item label="File Manager (Ctrl+h)">
+  <item label="File Manager (Alt+h)">
     <action name="Execute">
       <command>pcmanfm</command>
     </action>
