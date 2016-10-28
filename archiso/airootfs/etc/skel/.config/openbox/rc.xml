@@ -1,3 +1,4 @@
+<?xml version="1.0"?>
 <openbox_config xmlns="http://openbox.org/3.4/rc" xmlns:xi="http://www.w3.org/2001/XInclude">
   <resistance>
     <strength>10</strength>
@@ -181,6 +182,28 @@
         <wrap>no</wrap>
       </action>
     </keybind>
+    <keybind key="W-Left">
+    <action name="UnmaximizeFull"/>
+    <action name="MaximizeVert"/>
+    <action name="MoveResizeTo">
+        <width>50%</width>
+    </action>
+    <action name="MoveToEdge"><direction>west</direction></action>
+</keybind>
+<keybind key="W-Right">
+    <action name="UnmaximizeFull"/>
+    <action name="MaximizeVert"/>
+    <action name="MoveResizeTo">
+        <width>50%</width>
+    </action>
+    <action name="MoveToEdge"><direction>east</direction></action>
+</keybind>
+<keybind key="W-Down">
+   <action name="Unmaximize"/>
+</keybind>
+<keybind key="W-Up">
+   <action name="Maximize"/>
+</keybind>
     <keybind key="C-A-Right">
       <action name="GoToDesktop">
         <to>right</to>

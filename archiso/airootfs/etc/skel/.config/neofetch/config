@@ -299,7 +299,7 @@ disk_display="off"
 
 # Image Source
 # --image wall, ascii, /path/to/img, /path/to/dir/, off
-image="/usr/share/Icons/obrevenge-redhd.png"
+image="ascii"
 
 # Thumbnail directory
 thumbnail_dir="$HOME/.cache/thumbnails/neofetch"
@@ -348,7 +348,7 @@ xoffset=0
 # When this is set to distro it will use your
 # distro's logo as the ascii.
 # --ascii 'distro', path/to/ascii
-ascii="distro"
+ascii="/usr/share/Icons/obrascii"
 
 # Ascii distro
 # Which distro's ascii art to display.

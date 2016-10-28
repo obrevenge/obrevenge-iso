@@ -28,7 +28,7 @@ pulseaudio-alsa
 xf86-input-synaptics
 xf86-input-keyboard
 xf86-input-mouse
-intel-ucode
+
 
 #base
 base-devel
@@ -76,13 +76,23 @@ parcellite
 squashfs-tools
 calamares
 mkinitcpio-openswap
-arandr
 synapse
 qt5ct
 qt5-styleplugins
 boost
 pavucontrol
 pasystray-gtk2-standalone
+gnome-system-tools
+gufw
+lxrandr
+qxkb
+
+#obr-applications
+obr-control-panel
+obr-panelswitcher
+obr-software-install-tool
+obr-tools
+obr-welcome
 
 #print support
 cups
@@ -100,7 +110,6 @@ openbox
 lxpanel
 tint2
 mate-panel-gtk3
-mate-menu
 xfce4-panel
 xfce4-whiskermenu-plugin
 docky
@@ -123,6 +132,7 @@ obkey
 neofetch
 conky
 scrot
+
 
 # themes
 numix-themes
