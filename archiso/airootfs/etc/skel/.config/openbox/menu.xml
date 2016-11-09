@@ -5,7 +5,7 @@
 
 <menu id="root-menu" label="Openbox 3">
   <separator label="Install"/>
-    <item label="Install OBRevenge">
+  <item label="Install OBRevenge">
     <action name="Execute">
       <command>sudo calamares</command>
     </action>
@@ -23,7 +23,7 @@
     </action>
   </item>
   <separator />
-  <item label="Terminal (Alt+Cont+t)">
+  <item label="Terminal (Alt+Ctrl+t)">
     <action name="Execute">
       <command>xfce4-terminal</command>
     </action>
@@ -48,6 +48,18 @@
         <action name="Execute"><command>scrot -d 10</command></action>
     </item>
   </menu>
+  <separator />
+  <menu id="Conky Configuration" label="Conky">
+    <item label="Start Conky">
+        <action name="Execute"><command>startconky.sh</command></action>
+    </item>
+    <item label="Stop Conky">
+        <action name="Execute"><command>stopconky.sh</command></action>
+    </item>
+    <item label="Conky Configuration">
+        <action name="Execute"><command>conky-manager</command></action>
+    </item>
+    </menu>
   <separator />
   <item label="Wallpaper">
     <action name="Execute">
@@ -112,6 +124,9 @@
     </item>
     <item label="locale.conf">
         <action name="Execute"><command>gksu leafpad /etc/locale.conf</command></action>
+    </item>
+    <item label="bashrc">
+        <action name="Execute"><command>leafpad ~/.bashrc</command></action>
     </item>
     </menu>
 </menu>

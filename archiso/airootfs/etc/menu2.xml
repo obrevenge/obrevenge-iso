@@ -43,6 +43,18 @@
     </item>
   </menu>
   <separator />
+  <menu id="Conky Configuration" label="Conky">
+    <item label="Start Conky">
+        <action name="Execute"><command>startconky.sh</command></action>
+    </item>
+    <item label="Stop Conky">
+        <action name="Execute"><command>stopconky.sh</command></action>
+    </item>
+    <item label="Conky Configuration">
+        <action name="Execute"><command>conky-manager</command></action>
+    </item>
+    </menu>
+  <separator />
   <item label="Wallpaper">
     <action name="Execute">
       <command>nitrogen</command>

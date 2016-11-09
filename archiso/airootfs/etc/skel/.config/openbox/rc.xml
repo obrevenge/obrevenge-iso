@@ -183,27 +183,31 @@
       </action>
     </keybind>
     <keybind key="W-Left">
-    <action name="UnmaximizeFull"/>
-    <action name="MaximizeVert"/>
-    <action name="MoveResizeTo">
+      <action name="UnmaximizeFull"/>
+      <action name="MaximizeVert"/>
+      <action name="MoveResizeTo">
         <width>50%</width>
-    </action>
-    <action name="MoveToEdge"><direction>west</direction></action>
-</keybind>
-<keybind key="W-Right">
-    <action name="UnmaximizeFull"/>
-    <action name="MaximizeVert"/>
-    <action name="MoveResizeTo">
+      </action>
+      <action name="MoveToEdge">
+        <direction>west</direction>
+      </action>
+    </keybind>
+    <keybind key="W-Right">
+      <action name="UnmaximizeFull"/>
+      <action name="MaximizeVert"/>
+      <action name="MoveResizeTo">
         <width>50%</width>
-    </action>
-    <action name="MoveToEdge"><direction>east</direction></action>
-</keybind>
-<keybind key="W-Down">
-   <action name="Unmaximize"/>
-</keybind>
-<keybind key="W-Up">
-   <action name="Maximize"/>
-</keybind>
+      </action>
+      <action name="MoveToEdge">
+        <direction>east</direction>
+      </action>
+    </keybind>
+    <keybind key="W-Down">
+      <action name="Unmaximize"/>
+    </keybind>
+    <keybind key="W-Up">
+      <action name="Maximize"/>
+    </keybind>
     <keybind key="C-A-Right">
       <action name="GoToDesktop">
         <to>right</to>
@@ -317,6 +321,15 @@
         <startupnotify>
           <enabled>yes</enabled>
           <name>xfce4-terminal</name>
+        </startupnotify>
+      </action>
+    </keybind>
+    <keybind key="Print">
+      <action name="Execute">
+        <command>scrot</command>
+        <startupnotify>
+          <enabled>yes</enabled>
+          <name>screenshot</name>
         </startupnotify>
       </action>
     </keybind>

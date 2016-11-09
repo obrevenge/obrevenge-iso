@@ -28,9 +28,10 @@ pulseaudio-alsa
 xf86-input-synaptics
 xf86-input-keyboard
 xf86-input-mouse
-
+intel-ucode
 
 #base
+base
 base-devel
 gnome-keyring
 
@@ -93,6 +94,8 @@ obr-panelswitcher
 obr-software-install-tool
 obr-tools
 obr-welcome
+obr-wallpapers
+obr-config-files
 
 #print support
 cups
