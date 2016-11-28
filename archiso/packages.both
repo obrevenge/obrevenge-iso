@@ -87,6 +87,7 @@ gnome-system-tools
 gufw
 lxrandr
 qxkb
+sl
 
 #obr-applications
 obr-control-panel
@@ -126,7 +127,7 @@ lxappearance-obconf
 obconf
 feh
 cmatrix
-compton
+compton-garnetius-git
 oblogout
 qt4
 nitrogen
@@ -142,6 +143,7 @@ numix-themes
 faenza-icon-theme
 openbox-arc-git
 gtk-theme-arc-git
+vibrancy-colors
 
 #network
 networkmanager 

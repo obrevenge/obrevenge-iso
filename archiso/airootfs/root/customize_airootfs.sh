@@ -29,6 +29,9 @@ pacman -Syy
 systemctl enable org.cups.cupsd.service
 systemctl enable ntpd.service
 
+sed -i -e 's/then exit/then obwelcome-live/g' /usr/bin/postinstall.sh
+mkdir -p /etc/obrevenge/.tmp
+
 rm /usr/share/applications/cups.desktop
 rm /usr/share/applications/nm-connection-editor.desktop
 rm /usr/share/applications/lightdm-gtk-greeter-settings.desktop
