@@ -28,6 +28,7 @@ systemctl set-default multi-user.target
 pacman -Syy
 systemctl enable org.cups.cupsd.service
 systemctl enable ntpd.service
+rm /etc/udev/rules.d/81-dhcpcd.rules
 
 sed -i -e 's/then exit/then obwelcome-live/g' /usr/bin/postinstall.sh
 mkdir -p /etc/obrevenge/.tmp
