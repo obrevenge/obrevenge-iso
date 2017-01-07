@@ -28,6 +28,8 @@ pulseaudio-alsa
 xf86-input-synaptics
 xf86-input-keyboard
 xf86-input-mouse
+xf86-input-evdev
+b43-firmware
 intel-ucode
 
 #base
@@ -79,7 +81,7 @@ calamares
 mkinitcpio-openswap
 synapse
 qt5ct
-qt5-styleplugins
+qt5-styleplugins-git
 boost
 pavucontrol
 pasystray-gtk2-standalone

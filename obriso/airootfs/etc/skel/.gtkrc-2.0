@@ -3,7 +3,7 @@
 
 include "/home/ajjames31/.gtkrc-2.0.mine"
 gtk-theme-name="Arc-Dark"
-gtk-icon-theme-name="Faenza-Dark"
+gtk-icon-theme-name="Vibrancy-Dark-Blue"
 gtk-font-name="Cantarell 11"
 gtk-cursor-theme-name="Adwaita"
 gtk-cursor-theme-size=0
