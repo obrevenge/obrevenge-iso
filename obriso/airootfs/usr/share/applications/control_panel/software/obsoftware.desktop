@@ -1,8 +1,0 @@
-[Desktop Entry]
-Version=1.0
-Type=Application
-Name=OBRevenge Software Tool
-Comment=Software Installation Tool for OBRevenge
-Categories=Utility;
-Exec=gksu obsoftwareinstall2.py
-Icon=/usr/share/icons/Faenza/categories/48/preferences-system.png

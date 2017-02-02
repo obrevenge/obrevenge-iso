@@ -33,18 +33,8 @@ rm /etc/udev/rules.d/81-dhcpcd.rules
 sed -i -e 's/then exit/then obwelcome-live/g' /usr/bin/postinstall.sh
 mkdir -p /etc/obrevenge/.tmp
 
-rm /usr/share/applications/cups.desktop
-rm /usr/share/applications/nm-connection-editor.desktop
-rm /usr/share/applications/lightdm-gtk-greeter-settings.desktop
-rm /usr/share/applications/exo-preferred-applications.desktop
-rm /usr/share/applications/pamac-manager.desktop
-rm /usr/share/applications/lxappearance.desktop
-rm /usr/share/applications/pamac-updater.desktop
+sed -i '/OnlyShowIn/d' /usr/share/applications/mate-notification-properties.desktop
+cp /usr/share/applications/mate-notification-properties.desktop /etc/obrevenge/control_panel/customization
+
 rm /usr/share/applications/nautilus-classic.desktop
-rm /usr/share/applications/xfce4-power-manager-settings.desktop
-rm /usr/share/applications/users.desktop
-rm /usr/share/applications/obkey.desktop
-rm /usr/share/applications/obconf.desktop
-rm /usr/share/applications/gufw.desktop
-rm /usr/share/applications/lxrandr.desktop
-rm /usr/share/applications/qxkb.desktop
+

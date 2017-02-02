@@ -1,8 +1,0 @@
-[Desktop Entry]
-Version=1.0
-Type=Application
-Name=Display Settings
-Comment=Control Panel for OBRevenge
-Categories=Utility;Settings
-Exec=lxrandr
-Icon=/usr/share/icons/Faenza/categories/48/gnome-settings.png

@@ -1,8 +1,0 @@
-[Desktop Entry]
-Version=1.0
-Type=Application
-Name=OBRevenge Autostart
-Comment=Control Panel for OBRevenge
-Categories=Utility;
-Exec=autostart
-Icon=/usr/share/icons/Faenza/categories/48/preferences-system.png

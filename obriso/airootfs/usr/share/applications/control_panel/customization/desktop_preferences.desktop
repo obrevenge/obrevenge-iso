@@ -1,8 +1,0 @@
-[Desktop Entry]
-Version=1.0
-Type=Application
-Name=Wallpaper
-Comment=Wallpaper Setter for OBRevenge
-Categories=Utility;Settings
-Exec=nitrogen
-Icon=/usr/share/icons/Faenza/categories/48/package_graphics.png

@@ -1,8 +1,0 @@
-[Desktop Entry]
-Version=1.0
-Type=Application
-Name=QT Themes
-Comment=Theming for QT Applications
-Categories=Utility;Settings
-Exec=qt5ct
-Icon=/usr/share/icons/Faenza/categories/48/applications-astronomy.png

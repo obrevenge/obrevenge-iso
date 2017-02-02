@@ -2,12 +2,12 @@
 componentName:  obrevenge
 
 strings:
-    productName:         OBRevenge Linux
-    shortProductName:    OBRevenge
+    productName:         OBRevenge OS
+    shortProductName:    OBRevenge OS
     version:             1.0
     shortVersion:        1.0
-    versionedName:       OBRevenge 1.0
-    shortVersionedName:  OBRevenge 1.0
+    versionedName:       OBRevenge OS
+    shortVersionedName:  OBRevenge OS
     bootloaderEntryName: OBRevenge
 
 images:

@@ -1,8 +1,0 @@
-[Desktop Entry]
-Version=1.0
-Type=Application
-Name=Panel Switcher
-Comment=Panel Switching tool for obrevenge
-Categories=Utility;
-Exec=panelswitcher
-Icon=/usr/share/icons/Faenza/categories/48/gnome-settings.png
