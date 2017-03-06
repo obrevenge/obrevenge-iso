@@ -42,9 +42,9 @@ Presentation
         Text {
             anchors.horizontalCenter: background1.horizontalCenter
             anchors.top: background1.bottom
-            text: "Welcome to OBRevenge <br/>"+
-                  "OBRevenge is based on Arch Linux, with an easy installation.<br/>"+
-                  "During the installation, this slideshow will provide a quick introduction."
+            text: "Welcome to ARCHLabs Linux <br/>"+
+                  "ARCHLabs is based on Arch Linux, with an easy installation.<br/>"+
+                  "ARCHLabs is our vision for bringing the BunsenLabs experience to Arch."
             wrapMode: Text.WordWrap
             width: 600
             horizontalAlignment: Text.Center
@@ -63,9 +63,8 @@ Presentation
         Text {
             anchors.horizontalCenter: background2.horizontalCenter
             anchors.top: background2.bottom
-            text: "OBRevenge is completely customizable<br/>"+
-                  "to exactly how you want it. From theming, to the very<br/>"+
-                  "kernel itself, it can be changed using the power of Arch Linux."
+            text: "ARCHLabs features the lightning fast openbox menu,<br/>"+
+                  "customized to provide amazing functionality."
             wrapMode: Text.WordWrap
             width: 600
             horizontalAlignment: Text.Center
@@ -87,48 +86,6 @@ Presentation
             text: "Using the exclusive OBRevenge Software Install Tool<br/>"+
                   "you can install your own preferred apps for Internet, Media, and Office.<br/>"+
                   "You can make OBRevenge completely yours!"
-            wrapMode: Text.WordWrap
-            width: 600
-            horizontalAlignment: Text.Center
-        }
-    }
-
-    Slide {
-
-        Image {
-            id: background4
-            source: "slide4.png"
-            width: 500; height: 275
-            fillMode: Image.PreserveAspectFit
-            anchors.centerIn: parent
-        }
-        Text {
-            anchors.horizontalCenter: background4.horizontalCenter
-            anchors.top: background4.bottom
-            text: "OBRevenge has two different options for managing<br/>"+
-                  "packages. The original command line option, Pacman<br/>"+
-                  "and the popular GUI option: Pamac."
-            wrapMode: Text.WordWrap
-            width: 600
-            horizontalAlignment: Text.Center
-        }
-    }
-
-    Slide {
-
-        Image {
-            id: background5
-            source: "slide5.png"
-            width: 500; height: 275
-            fillMode: Image.PreserveAspectFit
-            anchors.centerIn: parent
-        }
-        Text {
-            anchors.horizontalCenter: background5.horizontalCenter
-            anchors.top: background5.bottom
-            text: "I appreciate you choosing OBRevenge, and hope you enjoy<br/>"+
-                  "it as much as I do making it! If you have any questions<br/>"+
-                  "or feedback, please feel free to leave a comment on the download page."
             wrapMode: Text.WordWrap
             width: 600
             horizontalAlignment: Text.Center

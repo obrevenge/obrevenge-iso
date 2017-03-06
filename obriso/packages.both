@@ -62,11 +62,8 @@ polkit-gnome
 lynx
 wget
 zenity
-openbox-menu
-openbox-xdgmenu
 gksu
 liboobs
-system-tools-backends
 gnome-disk-utility
 xfce4-power-manager
 parcellite
@@ -89,6 +86,7 @@ mate-notification-daemon
 mate-notification-theme-slate
 ntfs-3g
 gptfdisk
+obmenu-generator
 
 #obr-applications
 obr-control-panel
@@ -118,7 +116,9 @@ mate-panel-gtk3
 xfce4-panel
 xfce4-whiskermenu-plugin
 docky
-pcmanfm
+thunar
+thunar-archive-plugin
+thunar-volman
 xfce4-terminal
 w3m
 imagemagick
