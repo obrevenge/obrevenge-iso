@@ -142,8 +142,11 @@ scrot
 # themes
 faenza-icon-theme
 openbox-arc-git
-gtk-theme-arc-git
+arc-gtk-theme
 vibrancy-colors
+numix-gtk-theme
+numix-icon-theme-git
+numix-circle-icon-theme-git
 
 #network
 networkmanager 
