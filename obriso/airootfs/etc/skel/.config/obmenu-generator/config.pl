@@ -73,7 +73,7 @@
 =cut
 
 our $CONFIG = {
-  "editor"              => "geany",
+  "editor"              => "leafpad",
   "Linux::DesktopFiles" => {
                              desktop_files_paths     => ["/usr/share/applications", "/usr/local/share/applications"],
                              gtk_rc_filename         => "/home/ajjames31/.gtkrc-2.0",

@@ -299,7 +299,7 @@ disk_display="off"
 
 # Image Source
 # --image wall, ascii, /path/to/img, /path/to/dir/, off
-image="ascii"
+image="/usr/share/Icons/obr-logo.png"
 
 # Thumbnail directory
 thumbnail_dir="$HOME/.cache/thumbnails/neofetch"

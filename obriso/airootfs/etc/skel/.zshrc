@@ -16,3 +16,5 @@ alias pacs="sudo pacman -Ss"
 alias pacu="sudo pacman -Syy"
 alias update="sudo pacman -Syu"
 
+neofetch
+

@@ -34,7 +34,5 @@ sed -i -e 's/then exit/then obwelcome-live/g' /usr/bin/postinstall.sh
 mkdir -p /etc/obrevenge/.tmp
 
 sed -i '/OnlyShowIn/d' /usr/share/applications/mate-notification-properties.desktop
-cp /usr/share/applications/mate-notification-properties.desktop /etc/obrevenge/control_panel/customization
 
-rm /usr/share/applications/nautilus-classic.desktop
 

@@ -42,9 +42,9 @@ Presentation
         Text {
             anchors.horizontalCenter: background1.horizontalCenter
             anchors.top: background1.bottom
-            text: "Welcome to ARCHLabs Linux <br/>"+
-                  "ARCHLabs is based on Arch Linux, with an easy installation.<br/>"+
-                  "ARCHLabs is our vision for bringing the BunsenLabs experience to Arch."
+            text: "Welcome to OBRevenge OS <br/>"+
+                  "OBRevenge is based on Arch Linux, with an easy installation.<br/>"+
+                  "OBRevenge is our vision for bringing Arch Linux to everyone."
             wrapMode: Text.WordWrap
             width: 600
             horizontalAlignment: Text.Center
@@ -63,8 +63,8 @@ Presentation
         Text {
             anchors.horizontalCenter: background2.horizontalCenter
             anchors.top: background2.bottom
-            text: "ARCHLabs features the lightning fast openbox menu,<br/>"+
-                  "customized to provide amazing functionality."
+            text: "OBRevenge OS features a custom desktop experience,<br/>"+
+                  "that is completely different that anything you've tried before."
             wrapMode: Text.WordWrap
             width: 600
             horizontalAlignment: Text.Center

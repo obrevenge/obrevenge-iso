@@ -70,7 +70,7 @@ parcellite
 squashfs-tools
 calamares
 mkinitcpio-openswap
-synapse
+albert
 qt5ct
 qt5-styleplugins
 boost
@@ -87,6 +87,7 @@ mate-notification-theme-slate
 ntfs-3g
 gptfdisk
 obmenu-generator
+gmrun
 
 #obr-applications
 obr-control-panel
@@ -95,7 +96,6 @@ obr-software-install-tool
 obr-tools
 obr-welcome
 obr-wallpapers
-obr-config-files
 
 #print support
 cups
@@ -140,7 +140,6 @@ scrot
 
 
 # themes
-numix-themes
 faenza-icon-theme
 openbox-arc-git
 gtk-theme-arc-git

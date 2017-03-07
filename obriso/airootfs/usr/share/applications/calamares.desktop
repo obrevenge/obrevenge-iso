@@ -1,6 +1,6 @@
 [Desktop Entry]
 Type=Application
-Name=Install OBRevenge
+Name=Install OBRevenge (Calamares)
 Comment=Installer for OBRevenge
 Categories=Utility;
 Exec=sudo calamares

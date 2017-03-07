@@ -333,7 +333,7 @@
         </startupnotify>
       </action>
     </keybind>
-    <keybind key="C-t">
+    <keybind key="A-t">
       <action name="Execute">
         <command>xfce4-terminal --drop-down</command>
         <startupnotify>
@@ -344,10 +344,10 @@
     </keybind>
     <keybind key="A-h">
       <action name="Execute">
-        <command>pcmanfm</command>
+        <command>thunar</command>
         <startupnotify>
           <enabled>yes</enabled>
-          <name>pcmanfm</name>
+          <name>thunar</name>
         </startupnotify>
       </action>
     </keybind>
