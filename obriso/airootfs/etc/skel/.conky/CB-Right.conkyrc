@@ -24,7 +24,7 @@ own_window_title ARCHLabs CB Right Conky
 ### NOTE that a composite manager is required for real transparency.
 ### This option will not work as desired (in most cases) in conjunction with
 ### own_window_type normal
-# own_window_argb_visual yes # Options: yes or no
+own_window_argb_visual yes # Options: yes or no
 
 ### When ARGB visuals are enabled, this use this to modify the alpha value
 ### Use: own_window_type normal
@@ -134,6 +134,14 @@ double_buffer yes
 update_interval 1
 
 TEXT
+${image /usr/share/Icons/obr-logo-sm.png}
+
+
+
+
+
+
+${alignc}O B R E V E N G E  O S
 ${alignc}S Y S T E M    I N F O
 ${hr}
 Host:${alignr}${nodename}
@@ -149,6 +157,13 @@ Updates:${alignr}${execpi 20 checkupdates | wc -l}
 ${alignc}S H O R T C U T    K E Y S
 ${hr}
 Alt + Ctrl + t${alignr}Terminal
-Alt + h${alignr}File Manager
-Alt + t${alignr}Drop Terminal
+Super + h${alignr}File Manager
+Super + t${alignr}Drop Terminal
 PrtSc${alignr}Screenshot
+Ctrl + Alt + Del${alignr}Logout
+Super + c${alignr}Control Panel
+Super + b${alignr}Browser
+Super + ->${alignr}Tile Right
+Super + <-${alignr}Tile Left
+Super + Up${alignr}Maximize
+Super + Down${alignr}Unmaximize

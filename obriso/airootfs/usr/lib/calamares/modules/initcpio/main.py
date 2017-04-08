@@ -37,7 +37,10 @@ def run():
     """
     root_mount_point = libcalamares.globalstorage.value("rootMountPoint")
     subprocess.check_call(["cp", "/run/archiso/bootmnt/arch/boot/x86_64/vmlinuz", root_mount_point + "/boot/vmlinuz-linux"])
-    run_mkinitcpio()
     target_env_call(["/usr/bin/cleanup.sh"])
+    target_env_call(["sed -i 's/base udev/base udev plymouth/g' /etc/mkinitcpio.conf"])
+    target_env_call(["plymouth-set-default-theme -R spinfinity"])
+    target_env_call(["rm -f /usr/share/applications/rif.desktop"])
+    run_mkinitcpio()
 
     return None

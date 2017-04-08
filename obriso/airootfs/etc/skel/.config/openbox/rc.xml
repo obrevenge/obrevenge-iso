@@ -40,7 +40,7 @@
                   'Active' - where the active window is -->
   </placement>
   <theme>
-    <name>Arc-Dark</name>
+    <name>Numix</name>
     <titleLayout>NLIMC</titleLayout>
     <!--
       available characters are NDSLIMC, each can occur at most once.
@@ -182,32 +182,28 @@
         <wrap>no</wrap>
       </action>
     </keybind>
-    <keybind key="W-Left">
-      <action name="UnmaximizeFull"/>
-      <action name="MaximizeVert"/>
-      <action name="MoveResizeTo">
+      <keybind key="W-Left">
+    <action name="UnmaximizeFull"/>
+    <action name="MaximizeVert"/>
+    <action name="MoveResizeTo">
         <width>50%</width>
-      </action>
-      <action name="MoveToEdge">
-        <direction>west</direction>
-      </action>
-    </keybind>
-    <keybind key="W-Right">
-      <action name="UnmaximizeFull"/>
-      <action name="MaximizeVert"/>
-      <action name="MoveResizeTo">
+    </action>
+    <action name="MoveToEdge"><direction>west</direction></action>
+</keybind>
+<keybind key="W-Right">
+    <action name="UnmaximizeFull"/>
+    <action name="MaximizeVert"/>
+    <action name="MoveResizeTo">
         <width>50%</width>
-      </action>
-      <action name="MoveToEdge">
-        <direction>east</direction>
-      </action>
-    </keybind>
-    <keybind key="W-Down">
-      <action name="Unmaximize"/>
-    </keybind>
-    <keybind key="W-Up">
-      <action name="Maximize"/>
-    </keybind>
+    </action>
+    <action name="MoveToEdge"><direction>east</direction></action>
+</keybind>
+  <keybind key="W-Down">
+   <action name="Unmaximize"/>
+</keybind>
+<keybind key="W-Up">
+   <action name="Maximize"/>
+</keybind>
     <keybind key="C-A-Right">
       <action name="GoToDesktop">
         <to>right</to>
@@ -312,42 +308,6 @@
         <startupnotify>
           <enabled>yes</enabled>
           <name>Konqueror</name>
-        </startupnotify>
-      </action>
-    </keybind>
-    <keybind key="A-C-t">
-      <action name="Execute">
-        <command>xfce4-terminal</command>
-        <startupnotify>
-          <enabled>yes</enabled>
-          <name>xfce4-terminal</name>
-        </startupnotify>
-      </action>
-    </keybind>
-    <keybind key="Print">
-      <action name="Execute">
-        <command>scrot</command>
-        <startupnotify>
-          <enabled>yes</enabled>
-          <name>screenshot</name>
-        </startupnotify>
-      </action>
-    </keybind>
-    <keybind key="A-t">
-      <action name="Execute">
-        <command>xfce4-terminal --drop-down</command>
-        <startupnotify>
-          <enabled>yes</enabled>
-          <name>xfce4-terminal --drop-down</name>
-        </startupnotify>
-      </action>
-    </keybind>
-    <keybind key="A-h">
-      <action name="Execute">
-        <command>thunar</command>
-        <startupnotify>
-          <enabled>yes</enabled>
-          <name>thunar</name>
         </startupnotify>
       </action>
     </keybind>
@@ -611,16 +571,6 @@
       </mousebind>
     </context>
     <context name="Desktop">
-      <mousebind action="Click" button="Up">
-        <action name="GoToDesktop">
-          <to>previous</to>
-        </action>
-      </mousebind>
-      <mousebind action="Click" button="Down">
-        <action name="GoToDesktop">
-          <to>next</to>
-        </action>
-      </mousebind>
       <mousebind action="Click" button="A-Up">
         <action name="GoToDesktop">
           <to>previous</to>

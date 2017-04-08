@@ -32,8 +32,10 @@ our $SCHEMA = [
     #          COMMAND                 LABEL                ICON
     {item => ['xdg-open .',        'File Manager',      'file-manager']},
     {item => ['xfce4-terminal',      'Terminal',          'terminal']},
-    {item => ['xdg-open http://',  'Web Browser',       'web-browser']},
+    {item => ['google-chrome-stable',  'Web Browser',       'web-browser']},
     {item => ['gmrun',             'Run command',       'system-run']},
+    {item => ['nitrogen',             'Wallpaper',       'nitrogen']},
+    {item => ['control_panel',      'Control Panel',       'xfce4-settings']},
 
     {sep => 'Categories'},
 
@@ -101,8 +103,19 @@ our $SCHEMA = [
     {end_cat => undef},
     {sep => undef},
 
+    # Screenshot
+        {begin_cat => ['Screenshot', 'nitrogen']},
+            {item => ['scrot',                        'Take Now', 	'nitrogen']},
+            {item => ["scrot -d 5",		 'Take in 5 Seconds',   'nitrogen']},
+            {item => ["scrot -d 10",		    'Take in 10 Seconds',  'nitrogen']},
+        {end_cat => undef},
+
+
     ## The xscreensaver lock command
     {item => ['i3lock -c 000000', 'Lock', 'lock']},
+
+    # Conky Menu
+    {item => ['conky-manager', 'Conky', 'conky-manager']},
 
     ## This option uses the default Openbox's action "Exit"
     #{exit => ['Exit', 'exit']},

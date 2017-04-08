@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Application
+Name=Install OBRevenge (OBR Installer)
+Comment=Basic Installer for OBRevenge
+Categories=Utility;
+Exec=sudo /usr/bin/rif
+Icon=/usr/share/Icons/obrevenge-redhd.png

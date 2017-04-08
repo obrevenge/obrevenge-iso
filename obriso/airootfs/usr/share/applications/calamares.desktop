@@ -4,4 +4,4 @@ Name=Install OBRevenge (Calamares)
 Comment=Installer for OBRevenge
 Categories=Utility;
 Exec=sudo calamares
-Icon=/usr/share/Icons/obrevenge-redhd.png
+Icon=/usr/share/icons/calamares.png

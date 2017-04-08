@@ -70,13 +70,12 @@ parcellite
 squashfs-tools
 calamares
 mkinitcpio-openswap
-albert
+synapse
 qt5ct
 qt5-styleplugins
 boost
 pavucontrol
 pnmixer
-gnome-system-tools
 gufw
 lxrandr
 qxkb
@@ -88,6 +87,19 @@ ntfs-3g
 gptfdisk
 obmenu-generator
 gmrun
+tumbler
+compiz
+compiz-boxmenu
+xdgmenumaker
+conky-manager
+paranoid
+gsimplecal
+xfdashboard
+xbindkeys
+gtk3-nocsd-git
+google-chrome
+emerald
+emerald-themes
 
 #obr-applications
 obr-control-panel
@@ -96,6 +108,8 @@ obr-software-install-tool
 obr-tools
 obr-welcome
 obr-wallpapers
+obr-plymouth
+obr-compiz-compatibility
 
 #print support
 cups
@@ -112,7 +126,7 @@ lightdm-gtk-greeter-settings
 openbox
 lxpanel
 tint2
-mate-panel-gtk3
+mate-panel
 xfce4-panel
 xfce4-whiskermenu-plugin
 docky
@@ -147,6 +161,7 @@ vibrancy-colors
 numix-gtk-theme
 numix-icon-theme-git
 numix-circle-icon-theme-git
+mate-themes
 
 #network
 networkmanager 

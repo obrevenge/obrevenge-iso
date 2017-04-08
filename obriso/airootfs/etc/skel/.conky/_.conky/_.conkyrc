@@ -1,6 +1,6 @@
 #!/usr/bin/conky -d -c
 ##	.conkyrc configuration
-alignment top_right
+alignment top_left
 background yes
 border_margin 5
 border_width 5
@@ -23,17 +23,17 @@ draw_borders no
 draw_graph_borders no
 draw_outline no
 draw_shades no
-gap_x 5
-gap_y 40
+gap_x 25
+gap_y 60
 max_specials 1024
 max_user_text 10000
 maximum_width 180
-minimum_size 850
+minimum_size 0 0
 net_avg_samples 2
 no_buffers yes
 override_utf8_locale yes
 own_window yes
-own_window_colour 000000	# Black
+own_window_colour 000000
 own_window_hints undecorated,below,sticky,skip_taskbar,skip_pager
 own_window_transparent yes
 own_window_type override 	## normal
@@ -55,7 +55,19 @@ lua_load /home/didisoft/.conky/lua.lua
 # ${image /home/didisoft/.conky/didisoft.jpg -p 0,80 -s 26x28} # obrazki w conky
 
 
+own_window_argb_value 0
+own_window_argb_visual yes
 TEXT
+${image /usr/share/Icons/obr-logo-sm.png}
+
+
+
+
+
+
+
+
+
 ${color2}${goto 10}${font DejaVu Sans Mono:size=44}${time %H}${font DejaVu Sans Mono:size=20}${voffset -25}'${time %M}${font DejaVu Sans Mono:size=8}${voffset -12}${time %S}
 ${color2}${goto 85}${voffset 10}${font :size=8}${time %A}
 ${color2}${goto 85}${voffset 1}${font :size=8}${time %d %B %Y}
@@ -64,9 +76,7 @@ ${color}${font RsbillsDng:size=14}O${font}${font DejaVu Sans Mono:size=8}${execp
 ${voffset -20}${color2}${font led:size=10}SYSTEM ${font}$hr
 ${color}${sysname} Kernel: ${alignr}$kernel
 ${color}Conky:${alignr}${conky_version}
-${color}Bateria: ${alignr}${battery_percent BAT0}% / ${acpitemp}°C
-${color}Bateria czas pracy: ${alignr}$battery_time
-${color}Gmail: ${alignr}${execi 60 ~/.conky/gmail.sh}
+${color}Battery: ${alignr}${battery_percent BAT0}% / ${acpitemp}°C
 
 ${voffset -10}${color2}${font led:size=10}CPU ${font}$hr
 ${color}Core 1:  ${cpu cpu1}% $alignr ${freq_g (1)} GHz / ${exec sensors | grep "Core 0" | cut --bytes=14-21}
@@ -88,19 +98,9 @@ ${voffset -10}${color2}${font led:size=10}WIFI ${font}$hr
 ${color}gateway IP: ${alignr}${gw_ip}
 ${color}local IP: $alignr${addr eth1}
 ${color}public IP: $alignr${execi 60 ~/.conky/ip.sh}
-${voffset 5}${color}${goto 10}${font pizzadude bullets:size=16}S${font}${color}${voffset -12}${goto 40}Down: ${downspeed eth1}kb/s ${color}
-${goto 40}Day: ${totaldown eth1}${voffset -12}${alignr}${downspeedgraph eth1 25,50 64574e 64574e}
-${voffset -13}${goto 40}Month: ${execi 300 vnstat -m | grep "`date +"'%y"`" | tail -1 | awk '{print $3 $4}'}
 
-${color}${goto 10}${font pizzadude bullets:size=16}M${font}$color${voffset -12}${goto 40}Up: ${upspeed eth1}kb/s${color}
-${goto 40}Day: ${totalup eth1}${voffset -12}${alignr}${upspeedgraph eth1 25,50 64574e 64574e}
-${voffset -13}${goto 40}Month: ${execi 300 vnstat -m | grep "`date +"'%y"`" | tail -1 | awk '{print $6 $7}'}
 
-${voffset -10}${color}${font}${alignc}Użytkownicy online w sieci:$alignr${wireless_essid eth1}
-${color}${font}${alignc}${execi 60 ~/.conky/uzytkownicysieci.sh}
 
-${color2}${if_mpd_playing}${font led:size=10}MPD ${font}${mpd_status} $hr
-${color}${alignc}${mpd_artist} - "${mpd_title}"
-${color}${alignc}${mpd_album}
-${color}${alignc}${mpd_bar 3,150}
-${color}${alignc}${mpd_elapsed}/${mpd_length}${endif}
+
+
+

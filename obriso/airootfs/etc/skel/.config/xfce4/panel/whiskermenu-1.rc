@@ -1,5 +1,5 @@
-favorites=calamares.desktop,rif.desktop,exo-file-manager.desktop,xfce4-terminal.desktop
-recent=guvcview.desktop,org.gnome.DiskUtility.desktop,xfce4-terminal.desktop,exo-file-manager.desktop
+favorites=exo-file-manager.desktop,xfce4-terminal.desktop,google-chrome.desktop
+recent=xfce4-terminal.desktop,exo-file-manager.desktop
 button-title=Applications
 button-icon=/usr/share/Icons/obrevenge-redhd2.png
 button-single-row=false

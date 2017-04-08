@@ -35,4 +35,8 @@ mkdir -p /etc/obrevenge/.tmp
 
 sed -i '/OnlyShowIn/d' /usr/share/applications/mate-notification-properties.desktop
 
+#Enable Plymouth Theme
+sed -i 's/base udev/base udev plymouth/g' /etc/mkinitcpio.conf
+plymouth-set-default-theme -R spinfinity
+mkinitcpio -p linux
 
